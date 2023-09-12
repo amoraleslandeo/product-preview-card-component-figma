@@ -17,6 +17,7 @@
 html,
 body {
     height: 100%;
+
 }
 
 body {
@@ -146,7 +147,6 @@ p {
         flex-direction: column;
         height: auto;
         width: 343px;
-        margin-left: 24px;
     }
 
     .image {
