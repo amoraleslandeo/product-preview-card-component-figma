@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+:root {
+    --text_category: #6C7289;
+    --body_background: #F2EAE2;
+    --button: #3D8168;
+    --hover: #1A4032;
+    --card_background: #ffffff;
+    --title: #1C232B;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: var(--body_background);
+    font-size: 14px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-style: normal;
+    margin: 0px;
+    color: var(--text_category);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+small {
+    font-size: 12px;
+    line-height: normal;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.category {
+    margin: 32px 176.5px 20px 31.5px;
+    margin-bottom: 0px;
+}
+
+h1 {
+    color: var(--title);
+    font-family: 'Fraunces';
+    font-weight: 700;
+    font-size: 32px;
+    font-style: normal;
+    line-height: 32px;
+    margin: 20px 32px 0px 32px;
+}
+
+p {
+    margin: 0px;
+    line-height: 23px;
+    padding: 29px 31.5px 24px 31.5px;
+}
+
+.container {
+    width: 600px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--card_background);
+    border-radius: 10px;
+    overflow: hidden; /*adapta la imagen a las medidas del fondo*/
+}
+
+/*atributos para incluir imagen como fondo*/
+.image {
+    width: 300px;
+    height: 450px;
+    background-image: url('../images/image-product-desktop.jpg');
+    background-size: contain;
+}
+
+.chanel_card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chanel_cost {
+    display: flex;
+    gap: 19px;
+    align-items: center;
+    padding-left: 31.5px;
+}
+
+.chanel_prom {
+    font-family: 'Fraunces';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    color: var(--button);
+}
+
+.chanel_high_cost {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 23px;
+    text-decoration-line: line-through;
+}
+
+.cart {
+    text-decoration: none;
+    color: var(--card_background);
+    background-color: var(--button);
+    border-radius: 8px;
+    margin: 30px 32px 32px 32px;
+    padding: 15px;
+    line-height: normal;
+    font-weight: 700;
+    display:flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.cart:hover {
+    background-color: var(--hover);
+    color: var(--card_background);
+}
